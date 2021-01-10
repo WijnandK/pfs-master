@@ -1,0 +1,59 @@
+.infomodal {
+  position: fixed;
+  width: 90%;
+  height: 300px;
+  left: 5%;
+  top: 20vh;
+  background: white;
+  border-radius: 5px;
+  z-index: 200;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  animation: openModal 0.9s ease-out forwards;
+}
+
+.infomodal__header {
+  border-bottom: 2px solid #3b0062;
+}
+
+.infomodal__header h1 {
+  font-size: 1.5rem;
+  color: #3b0062;
+  margin: 1rem;
+}
+
+.infomodal__content {
+  padding: 1rem;
+}
+
+.infomodal__actions {
+  padding: 1rem;
+  text-align: right;
+}
+
+.infomodal__actions button {
+  margin: 0 0.5rem;
+}
+@keyframes openModal {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .infomodal {
+    width: 40rem;
+    left: calc((100% - 40rem) / 2);
+  }
+}

@@ -1,0 +1,104 @@
+// Blog LISTING!
+
+.blogwrapper {
+  width: 99%;
+  height: 100vh;
+  margin: auto;
+  padding-top: 70px;
+  background-image: linear-gradient(105deg, $cyan 22%, $mblue 100%);
+}
+.blog_program_banner {
+  width: 100%;
+
+  background-color: inherit;
+}
+.blog_free_banner {
+}
+.blogbtns {
+  display: flex;
+
+  margin-top: 22px;
+  flex-direction: row;
+}
+@include media6 {
+  .blogwrapper {
+    display: flex;
+  }
+  .blog_program_banner {
+    width: 80%;
+  }
+  .blogbtns {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    align-items: center;
+  }
+  //   align-items: stretch;
+  //   justify-content: space-evenly;
+  // }
+  // .blogwrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   column-gap: 20px;
+  //   margin-bottom: 30px;
+  // }
+  // .blogbtns {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 222px;
+  //   height: 250px;
+  //   justify-content: space-around;
+  //   margin-left: 500px;
+  //   margin-top: 40px;
+  // }
+}
+// .fadein {
+//   opacity: 0;
+
+//   @include animation(fadein 2s);
+//   @include animation-fill-mode(forwards);
+// }
+// .fadein.card {
+//   margin-bottom: 10px;
+// }
+// .fadein.card.start {
+//   margin-top: 1px;
+// }
+
+// .title {
+//   @include animation-detail(0.9s);
+//   font-size: 42px;
+//   font-weight: bold;
+// }
+
+// .subtitle {
+//   @include animation-detail(2.2s);
+//   font-size: 33px;
+// }
+
+// .subsubTitle {
+//   @include animation-detail(3.6s);
+//   font-size: 18px;
+// }
+
+// @keyframes fadein {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// @media only screen and (min-width: 768px) {
+//   h1 {
+//     font-size: 55px;
+//   }
+//   .subheading {
+//     font-size: 30px;
+//   }
+// }
+
+// BLOG EDITOR PAGE

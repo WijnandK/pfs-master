@@ -1,0 +1,54 @@
+.swipecontainer {
+  width: 100%;
+  background-color: inherit;
+  padding-top: 20px;
+}
+.slidewrapimg {
+  width: 100%;
+  height: 560px;
+}
+.slidewrapimg span h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  color: $base-page-white;
+  margin-left: 20px;
+  margin-bottom: 33px;
+  height: 38px;
+}
+.slidewrapimg span p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  display: inline;
+  margin-left: 80px;
+
+  color: $yellow;
+}
+.btn_margin {
+  width: 100%;
+  margin-left: 40%;
+  margin-top: 50px;
+  margin-bottom: 39px;
+}
+@media (min-width: 768px) {
+  .slidewrapimg {
+    width: 70%;
+    margin-left: auto;
+    margin-bottom: 22px;
+    height: 750px;
+  }
+  .slidewrapimg span h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: $base-page-white;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    height: 50px;
+  }
+
+  .btn_margin {
+    width: 100%;
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 39px;
+  }
+}

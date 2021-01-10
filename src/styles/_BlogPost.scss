@@ -1,0 +1,130 @@
+.single-post {
+  margin: auto;
+  text-align: center;
+  color: $mblue;
+  width: 90%;
+}
+.postLine {
+  width: 80%;
+  background-color: $mblue;
+  height: 3px;
+  margin-bottom: 29px;
+  animation: openLine 1.2s ease-out forwards;
+}
+.single-post_space {
+  height: 65px;
+  background-color: $mblue;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.btn_post_side {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 40px;
+  top: 650px;
+  height: 50px;
+  background-color: $mblue;
+}
+.single-post_space_img {
+  width: 98%;
+  height: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 29px;
+}
+
+.single-post h2 {
+  font-size: 1rem;
+  color: #464646;
+  padding-bottom: 1.2rem;
+}
+.single-post__text {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.single-post__image {
+  height: 20rem;
+  width: 20rem;
+  margin: 1rem auto;
+}
+.singe-post__qoute {
+  padding-bottom: 52px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+@include media6 {
+  .single-post {
+    margin: auto;
+    text-align: center;
+    color: $mblue;
+    width: 80%;
+  }
+  .btn_post_side {
+    position: fixed;
+    top: 300px;
+  }
+  .single-post_space {
+    height: 65px;
+    background-color: $mblue;
+    width: 100%;
+  }
+
+  .single-post_space_img {
+    width: 88%;
+    height: 69px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .single-post h1 {
+    font-size: 2.7rem;
+    color: $mblue;
+    padding-bottom: 1rem;
+  }
+  .single-post h2 {
+    font-size: 2rem;
+    color: #464646;
+    padding-bottom: 3rem;
+
+    margin-top: 30px;
+  }
+  .single-post__text {
+    font-size: 32px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .single-post__image {
+    margin-top: 120px;
+    height: 32rem;
+    width: 22rem;
+    margin: 1rem auto;
+    margin-top: 60px;
+    box-shadow: 1px 1px 2px 1px;
+  }
+  .singe-post__qoute {
+    padding-bottom: 52px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    font-family: "Roboto", sans-serif;
+  }
+  .singe-post__qoute h4 {
+    font-size: 62px;
+  }
+}
+
+// @media (min-width: 768px) {
+//   .single-post {
+//     width: 40rem;
+//     margin-top: 50px;
+//     color: orange;
+//   }
+// }

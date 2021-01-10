@@ -1,0 +1,297 @@
+.card_wrapper {
+  width: 100vw;
+  height: 340px;
+  background-color: inherit;
+
+  background-image: linear-gradient(45deg, $red, $pink);
+}
+.desktopbanner_pf {
+  display: none;
+}
+.card_wrap_img {
+  background-color: inherit;
+  height: 180px;
+  width: 100%;
+}
+.cc_wrapp {
+  background-color: inherit;
+  width: 80%;
+  height: 100%;
+  margin-left: 20%;
+}
+.card_wrap_btn {
+  background-color: inherit;
+  height: 50px;
+  width: 60%;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-top: 23px;
+  display: flex;
+}
+.project_card_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.back_project_head {
+  width: 350px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -17px 13px 41px rgba(0, 65, 144, 0.6);
+}
+.all_project_skills {
+  width: 100%;
+  height: 200px;
+}
+.project_wrapper_bck {
+  z-index: -1;
+  width: 100%;
+  padding-top: 101px;
+  height: 80vh;
+  background-image: linear-gradient(15deg, $mblue 0%, $lightblue 100%);
+  box-shadow: -17px 13px 41px rgba(13, 78, 158, 0.6);
+}
+.card_title {
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  margin-top: 15px;
+}
+.portfolio_image {
+  width: 100%;
+  height: 110px;
+  z-index: -22;
+  position: absolute;
+}
+.projectline {
+  width: 80%;
+  height: 3px;
+  background-color: white;
+  margin-left: 10%;
+  margin-top: 21%;
+  animation: openLine 1.9s ease-out forwards;
+}
+.projectheader {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+  padding-top: 120px;
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+}
+
+.projectpftext {
+  width: 80%;
+  margin: auto;
+  margin-top: 280px;
+
+  @include animation-detail(0.9s);
+}
+.projectpftext p {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  color: $yellow;
+}
+
+.card_wrapper_image {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+.card_wrapper_text {
+  font-family: "Roboto", sans-serif;
+  margin-left: 8px;
+  font-size: 26px;
+}
+.buttonwrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 4s linear infinite;
+  -moz-animation: rotating 4s linear infinite;
+  -ms-animation: rotating 4s linear infinite;
+  -o-animation: rotating 4s linear infinite;
+  animation: rotating 4s linear infinite;
+}
+
+@keyframes openLine {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  // 50% {
+  //   opacity: 1;
+  //   transform: translateX(100px);
+  // }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@include media6 {
+  .project_card_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto auto;
+    background-image: linear-gradient(145deg, $teal 40%, $mblue 100%);
+  }
+  .rotating {
+    -webkit-animation: rotating 8s linear infinite;
+    -moz-animation: rotating 8s linear infinite;
+    -ms-animation: rotating 8s linear infinite;
+    -o-animation: rotating 8s linear infinite;
+    animation: rotating 8s linear infinite;
+  }
+
+  .projectpftext p {
+    font-size: 38px;
+    font-family: "Roboto", sans-serif;
+    color: $yellow;
+  }
+  .card_wrap_btn {
+    background-color: inherit;
+    height: 80px;
+    width: 60%;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-top: 123px;
+    display: flex;
+    font-size: 33px;
+  }
+
+  .card_wrapper {
+    width: 670px;
+    height: 750px;
+    border: 2px solid $mblue;
+  }
+  .card_wrap_img {
+    background-color: inherit;
+    height: 380px;
+    width: 100%;
+  }
+  .card_title {
+    color: white;
+    text-align: center;
+    margin-top: 22px;
+  }
+  .back_project_head {
+    width: 750px;
+    height: 640px;
+    margin-left: 300px;
+    box-shadow: -17px 13px 41px rgba(0, 65, 144, 0.6);
+  }
+
+  .all_project_skills {
+    display: none;
+  }
+  .all_project_skills_desktop {
+    width: 100%;
+    height: 490px;
+    margin-top: 330px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectline {
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 13%;
+    animation: openLine 1.9s ease-out forwards;
+  }
+  .desktopbanner_pf {
+    font-size: 55px;
+    color: white;
+    margin-top: 200px;
+    margin-left: 100px;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5rem;
+    @include animation-detail(2.2s);
+  }
+
+  .projectheader {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .project_wrapper_bck {
+    padding-top: 1px;
+  }
+  .portfolio_bck_banner {
+    // width: 100%;
+
+    // background-color: rgba(0, 65, 144, 0.6);
+    // height: 450px;
+    // position: absolute;
+  }
+
+  .projectheader {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .card_wrapper_text {
+    font-family: "Roboto", sans-serif;
+    margin-left: 2px;
+    font-size: 26px;
+  }
+  .buttonwrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    column-gap: 20px;
+  }
+}
